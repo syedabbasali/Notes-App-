@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+      http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.esc.practice.apps.notes.dto.request.CreateNotesRequest
+		</class-a>
+		<class-b>com.esc.practice.apps.notes.dto.NotesVO</class-b>
+		<field-exclude>
+			<a>attachment</a>
+			<b>attachment</b>
+		</field-exclude>
+	</mapping>
+	<mapping>
+		<class-a>com.esc.practice.apps.notes.dto.request.UpdateNotesRequest
+		</class-a>
+		<class-b>com.esc.practice.apps.notes.dto.NotesVO</class-b>
+		<field-exclude>
+			<a>attachment</a>
+			<b>attachment</b>
+		</field-exclude>
+	</mapping>
+	<mapping>
+		<class-a>com.esc.practice.apps.notes.dto.NotesVO</class-a>
+		<class-b>com.esc.practice.apps.notes.dao.model.Notes</class-b>
+	</mapping>
+	<mapping>
+		<class-a>com.esc.practice.apps.notes.dto.NotesQueryVO</class-a>
+		<class-b>com.esc.practice.apps.notes.dto.request.GetNotesRequest
+		</class-b>
+	</mapping>
+</mappings>
